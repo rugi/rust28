@@ -605,6 +605,7 @@ installed targets:
 ```
 
 Ya se ve el toolchain: nightly-x86_64-unknown-linux-gnu                   ✅
+
 Se puede ejecutar el proyecto sin problemas usando : cargo +nightly run   ✅
   
 ### Algún warning de clippy que hayas corregido.
@@ -615,5 +616,6 @@ Ningun cambio
 anyhow
 
 Se ve la dependencia agregada en el archivo Cargo.toml                    ✅
+
 
 Lista la validación de la session 02.
