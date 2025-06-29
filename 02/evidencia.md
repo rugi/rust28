@@ -2,7 +2,7 @@
 
 ## 1. Actualizar tu toolchain con rustup
 
-```bash
+```console
 [rugi@bigoze hello_rust]$ echo "carpeta actual"
 carpeta actual
 
