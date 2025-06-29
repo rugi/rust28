@@ -31,6 +31,7 @@ installed targets:
 Déjame explicártelo de forma clara y práctica:
 
 🚀 ¿Qué es un toolchain en Rust?
+
 ➡ Un toolchain es el conjunto de herramientas que necesitas para escribir, compilar y manejar programas en Rust.
 
 Cuando instalas Rust con rustup, lo que realmente estás instalando es un toolchain que incluye:
