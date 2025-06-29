@@ -1,4 +1,3 @@
-# Rust
 ## Session 1. Actividades.
 
 🎯 Objetivo del día
