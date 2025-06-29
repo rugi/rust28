@@ -22,6 +22,32 @@ installed targets:
   x86_64-unknown-linux-gnu
 ```
 
+```
+[rugi@bigoze rust]$ echo "Carpeta actual"
+Carpeta actual
+[rugi@bigoze rust]$ pwd
+/home/rugi/labs/rust
+[rugi@bigoze rust]$  cargo new hello_rust
+    Creating binary (application) `hello_rust` package
+note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[rugi@bigoze rust]$ cd hello_rust
+[rugi@bigoze hello_rust]$ cargo run
+   Compiling hello_rust v0.1.0 (/home/rugi/labs/rust/hello_rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.40s
+     Running `target/debug/hello_rust`
+Hello, world!
+[rugi@bigoze hello_rust]$ cargo build
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+[rugi@bigoze hello_rust]$ echo "validando existencia del binario en linux)
+> "
+validando existencia del binario en linux)
+
+[rugi@bigoze hello_rust]$ find . -name hello_rust
+./target/debug/hello_rust
+[rugi@bigoze hello_rust]$ 
+```
+
+
 ## Dudas.
 ### Pregunta:
 ¿Qué es el toolchain? qué significa que exista y que esté estable?
