@@ -44,12 +44,18 @@ Hello, world!
 [rugi@bigoze hello_rust]$ cargo build
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
 
-[rugi@bigoze hello_rust]$ echo "validando existencia del binario en linux)"
-validando existencia del binario en linux)
+[rugi@bigoze hello_rust]$ echo "validando existencia del binario en linux"
+validando existencia del binario en linux
 
 
 [rugi@bigoze hello_rust]$ find . -name hello_rust
 ./target/debug/hello_rust
+
+[rugi@bigoze hello_rust]$ echo "Ejecutando binario"
+Ejecutando binario
+
+[rugi@bigoze hello_rust]$ ./target/debug/hello_rust
+Hello, world!
 
 [rugi@bigoze hello_rust]$ 
 ```
