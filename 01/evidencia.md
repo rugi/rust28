@@ -57,6 +57,7 @@ Cuando rustup show dice:
     stable-x86_64-unknown-linux-gnu (active, default)
     
 ➡ Significa que:
+
 ✅ Tu toolchain activo es stable, o sea el recomendado para producción y aprendizaje.
 
 ✅ Estás usando un Rust “seguro” (sin features experimentales).
