@@ -613,7 +613,8 @@ Ningun warging
 ### Algún cambio de formato hecho por rustfmt.
 Ningun cambio
 ### Dependencia agregada con cargo add.
-anyhow
+
+    anyhow
 
 Se ve la dependencia agregada en el archivo Cargo.toml                    ✅
 
