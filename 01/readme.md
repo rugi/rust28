@@ -63,5 +63,5 @@ Por cultura Rust: compila tú mismo:
 
 ¿Para qué sirve rustup?
 
-Si quieres, escríbelo aquí y lo reviso contigo.
+ 
 
