@@ -35,13 +35,17 @@ Déjame explicártelo de forma clara y práctica:
 
 Cuando instalas Rust con rustup, lo que realmente estás instalando es un toolchain que incluye:
 ✅ rustc → El compilador de Rust (convierte tu código fuente en un binario).
+
 ✅ cargo → El build system y package manager (gestiona proyectos, dependencias, compilación).
+
 ✅ Estándar libraries → Los archivos que definen las librerías base que todo programa Rust usa (por ejemplo std::io, std::fs).
+
 ✅ Otras herramientas opcionales → Ej. clippy, rustfmt, rustdoc.
 
 Entonces, el toolchain es el paquete completo de herramientas que forman el entorno de trabajo Rust para un cierto propósito o versión.
 
 🔑 ¿Por qué hablamos de un toolchain “estable”?
+
 👉 Rust tiene varias “versiones” de toolchains que puedes usar según tu necesidad:
 
 Toolchain	Uso principal	Ejemplo
@@ -54,7 +58,9 @@ Cuando rustup show dice:
     
 ➡ Significa que:
 ✅ Tu toolchain activo es stable, o sea el recomendado para producción y aprendizaje.
+
 ✅ Estás usando un Rust “seguro” (sin features experimentales).
+
 ✅ El toolchain corresponde a tu arquitectura x86_64-unknown-linux-gnu (64 bits en Linux en tu caso).
 
 📝 ¿Por qué existe el concepto de toolchain?
@@ -68,9 +74,13 @@ Otro podría requerir stable para deployar en producción.
 👉 rustup es lo que facilita ese manejo de toolchains y sus versiones.
 
 ⚡ En resumen
+
 🔹 El toolchain es el conjunto completo de herramientas de una versión de Rust.
+
 🔹 Que sea estable significa que es confiable, listo para producción y aprendizaje, sin features experimentales.
+
 🔹 rustup te deja cambiar de toolchain y administrar distintas versiones fácilmente.
+
 
 ### tarea
 #### Preguntas:
