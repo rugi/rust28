@@ -13,6 +13,7 @@ Aprender a:
 1. 🔄 Actualizar tu toolchain con rustup
 
     rustup update
+   
     rustup show
 
 Verifica que estás usando la versión más reciente de stable.
