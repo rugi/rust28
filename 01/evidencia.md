@@ -1,11 +1,11 @@
 ## Semana 1. Validación.
-[rugi@bigoze semana01]$ rustc --version
-                    rustc 1.87.0 (17067e9ac 2025-05-09)
+    [rugi@bigoze semana01]$ rustc --version
+                        rustc 1.87.0 (17067e9ac 2025-05-09)
 
-[rugi@bigoze semana01]$ cargo --version
-    cargo 1.87.0 (99624be96 2025-05-06)
+    [rugi@bigoze semana01]$ cargo --version
+        cargo 1.87.0 (99624be96 2025-05-06)
 
-
+```
 [rugi@bigoze semana01]$ rustup show
 Default host: x86_64-unknown-linux-gnu
 rustup home:  /home/rugi/.rustup
@@ -20,14 +20,13 @@ name: stable-x86_64-unknown-linux-gnu
 active because: it's the default toolchain
 installed targets:
   x86_64-unknown-linux-gnu
+```
 
-## Dudas
+## Dudas.
+### Pregunta:
+¿Qué es el toolchain? qué significa que exista y que esté estable?
 
-antes de continar, 
-Qué es el toolchain? qué significa que exista y que esté estable?
-
-
-ChatGPT said:
+### Respuesta:
 ¡Qué buena pregunta, Isaac! Me alegra mucho que vayas profundizando, porque eso marca la diferencia entre “solo usar Rust” y entender bien lo que pasa detrás.
 Déjame explicártelo de forma clara y práctica:
 
@@ -51,9 +50,8 @@ beta	Versión previa a la próxima stable. Para testing anticipado.	Ej: rustc 1.
 nightly	Donde se prueban nuevas características experimentales. Permite usar features no estables.	Ej: rustc 1.89.0-nightly
 
 Cuando rustup show dice:
-
- 
-stable-x86_64-unknown-linux-gnu (active, default)
+    stable-x86_64-unknown-linux-gnu (active, default)
+    
 ➡ Significa que:
 ✅ Tu toolchain activo es stable, o sea el recomendado para producción y aprendizaje.
 ✅ Estás usando un Rust “seguro” (sin features experimentales).
@@ -75,13 +73,13 @@ Otro podría requerir stable para deployar en producción.
 🔹 rustup te deja cambiar de toolchain y administrar distintas versiones fácilmente.
 
 ### tarea
-
+#### Preguntas:
 Explica con tus propias palabras:
-rustc
-cargo
-rustup
+* rustc
+* cargo
+* rustup
 
- Tu análisis + comentarios
+#### Respuestas:
 ✅ rustc
 es el compilador, es decir, es la herramienta que convierte el codigo fuente en binario, dado que rust no es multiplataforma, este binario resultante es propio de la plataforma donde se compila
 
