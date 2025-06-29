@@ -1,5 +1,5 @@
 # Rust
-## Semana 1. Actividades.
+## Session 1. Actividades.
 
 🎯 Objetivo del día
 ✅ Instalar Rust usando rustup.
