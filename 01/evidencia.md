@@ -32,7 +32,9 @@ Carpeta actual
 [rugi@bigoze rust]$  cargo new hello_rust
     Creating binary (application) `hello_rust` package
 note: see more `Cargo.toml` keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [rugi@bigoze rust]$ cd hello_rust
+
 [rugi@bigoze hello_rust]$ cargo run
    Compiling hello_rust v0.1.0 (/home/rugi/labs/rust/hello_rust)
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.40s
