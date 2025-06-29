@@ -554,3 +554,66 @@ anyhow = "1.0.98"
 ```
 
 ## 4.Probar todo en tu proyecto hello_rust
+```console
+[rugi@bigoze hello_rust]$ echo "carpeta actual"
+carpeta actual
+
+[rugi@bigoze hello_rust]$ pwd
+/home/rugi/labs/rust/hello_rust
+
+[rugi@bigoze hello_rust]$ cargo clippy
+   Compiling anyhow v1.0.98
+    Checking hello_rust v0.1.0 (/home/rugi/labs/rust/hello_rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.83s
+
+[rugi@bigoze hello_rust]$ cargo fmt
+
+[rugi@bigoze hello_rust]$ cargo add anyhow
+    Updating crates.io index
+      Adding anyhow v1.0.98 to dependencies
+             Features:
+             + std
+             - backtrace
+
+[rugi@bigoze hello_rust]$ cargo +nightly run
+   Compiling anyhow v1.0.98
+   Compiling hello_rust v0.1.0 (/home/rugi/labs/rust/hello_rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.12s
+     Running `target/debug/hello_rust`
+Hello, world!
+
+[rugi@bigoze hello_rust]$ 
+```
+## Exta. Cierre de session.
+### Salida de rustup show después de instalar nightly.
+```console
+[rugi@bigoze hello_rust]$ rustup show
+Default host: x86_64-unknown-linux-gnu
+rustup home:  /home/rugi/.rustup
+
+installed toolchains
+--------------------
+stable-x86_64-unknown-linux-gnu (active, default)
+nightly-x86_64-unknown-linux-gnu
+
+active toolchain
+----------------
+name: stable-x86_64-unknown-linux-gnu
+active because: it's the default toolchain
+installed targets:
+  x86_64-unknown-linux-gnu
+```
+
+Ya se ve el toolchain: nightly-x86_64-unknown-linux-gnu                   ✅
+Se puede ejecutar el proyecto sin problemas usando : cargo +nightly run   ✅
+  
+### Algún warning de clippy que hayas corregido.
+Ningun warging
+### Algún cambio de formato hecho por rustfmt.
+Ningun cambio
+### Dependencia agregada con cargo add.
+anyhow
+
+Se ve la dependencia agregada en el archivo Cargo.toml                    ✅
+
+Lista la validación de la session 02.
