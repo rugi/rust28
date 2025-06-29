@@ -21,6 +21,7 @@ Verifica que estás usando la versión más reciente de stable.
 2. 🌙 Instalar y probar toolchain nightly
 
     rustup install nightly
+   
     rustup show
 
 ✔ Luego, entra a tu proyecto y prueba correrlo con nightly sin cambiar el global:
