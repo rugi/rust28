@@ -1,8 +1,11 @@
 ## Session 1. Actividades.
 
-🎯 Objetivo del día
+🎯 Objetivo del día.
+
 ✅ Instalar Rust usando rustup.
+
 ✅ Tener un toolchain estable funcionando.
+
 ✅ Entender y usar cargo y rustc para compilar y ejecutar un programa simple.
 
 🛠 PASO 1: Instalar rustup
