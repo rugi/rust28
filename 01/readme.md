@@ -15,7 +15,7 @@ O en Windows (PowerShell):
 
 powershell
  
-Invoke-WebRequest -Uri https://win.rustup.rs -OutFile rustup-init.exe; .\rustup-init.exe
+    Invoke-WebRequest -Uri https://win.rustup.rs -OutFile rustup-init.exe; .\rustup-init.exe
 
 👉 Sigue el asistente (elige default).
 
@@ -24,33 +24,35 @@ Invoke-WebRequest -Uri https://win.rustup.rs -OutFile rustup-init.exe; .\rustup-
 🛠 PASO 2: Validar instalación
 Corre estos comandos:
 
- 
-rustc --version
-cargo --version
-rustup show
+    rustc --version
+
+    cargo --version
+
+    rustup show
+
 💡 Resultado esperado:
 
-rustc: algo como rustc 1.77.2 (o versión estable actual)
+    rustc: algo como rustc 1.77.2 (o versión estable actual)
 
-cargo: versión compatible con el rustc instalado
+    cargo: versión compatible con el rustc instalado
 
-rustup: muestra el toolchain activo (debería ser stable)
+    rustup: muestra el toolchain activo (debería ser stable)
 
 🛠 PASO 3: Primer proyecto con cargo
 Crea un nuevo proyecto:
-
  
-cargo new hello_rust
-cd hello_rust
-cargo run
+    cargo new hello_rust
+    cd hello_rust
+    cargo run
+
 💡 Espera: Hello, world! en la consola.
 
 🛠 PASO 4: Compilar manualmente
 Por cultura Rust: compila tú mismo:
-
  
-cargo build
-./target/debug/hello_rust
+    cargo build
+    ./target/debug/hello_rust
+
 (o target\debug\hello_rust.exe en Windows)
 
 🛠 PASO 5: Entender qué es cada herramienta
