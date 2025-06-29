@@ -63,7 +63,7 @@ Hello, world!
 
 ## Dudas.
 ### Pregunta:
-¿Qué es el toolchain? qué significa que exista y que esté estable?
+¿Qué es el toolchain? ¿Qué significa que exista y que esté estable?
 
 ### Respuesta:
 ¡Qué buena pregunta, Isaac! Me alegra mucho que vayas profundizando, porque eso marca la diferencia entre “solo usar Rust” y entender bien lo que pasa detrás.
