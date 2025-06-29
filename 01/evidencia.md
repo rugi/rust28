@@ -120,6 +120,7 @@ Publica crates (publish).
 es una herramienta que me permite saber si el toolchain ( es decir el conjunto de herramientas para programar en rust) està OK, y/o me da el status actual.
 
 ✔ Muy bien explicado.
+
 💡 Agrego:
 Además de mostrar el estado, rustup también:
 
