@@ -56,6 +56,7 @@ Entonces, el toolchain es el paquete completo de herramientas que forman el ento
 | nightly    | 	Donde se prueban nuevas características experimentales. Permite usar features no estables.    | 	Ej: rustc 1.89.0-nightly | 
 
 Cuando rustup show dice:
+
     stable-x86_64-unknown-linux-gnu (active, default)
     
 ➡ Significa que:
