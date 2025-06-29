@@ -87,7 +87,7 @@ Otro podría requerir stable para deployar en producción.
 🔹 rustup te deja cambiar de toolchain y administrar distintas versiones fácilmente.
 
 
-### tarea
+# Tarea
 #### Preguntas:
 Explica con tus propias palabras:
 * rustc
