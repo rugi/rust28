@@ -1,4 +1,6 @@
-🎯 Objetivo general
+## Session 2. Actividades.
+
+🎯 Objetivo de la session.
 Aprender a:
 
 * Usar rustup para actualizar y gestionar toolchains (incluyendo nightly).
