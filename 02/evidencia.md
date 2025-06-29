@@ -584,7 +584,7 @@ Hello, world!
 
 [rugi@bigoze hello_rust]$ 
 ```
-## Exta. Cierre de session.
+## Extra. Cierre de session.
 ### Salida de rustup show después de instalar nightly.
 ```console
 [rugi@bigoze hello_rust]$ rustup show
