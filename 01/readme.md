@@ -1,6 +1,6 @@
 ## Session 1. Actividades.
 
-🎯 Objetivo del día.
+🎯 Objetivo de la session.
 
 ✅ Instalar Rust usando rustup.
 
