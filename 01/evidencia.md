@@ -68,6 +68,7 @@ Cuando rustup show dice:
 ✅ El toolchain corresponde a tu arquitectura x86_64-unknown-linux-gnu (64 bits en Linux en tu caso).
 
 📝 ¿Por qué existe el concepto de toolchain?
+
 Porque Rust permite tener varias versiones instaladas al mismo tiempo, y decidir cuál usar proyecto por proyecto.
 Por ejemplo:
 
@@ -106,6 +107,7 @@ Solo agrego: Rust sí es multiplataforma en el sentido de que puedes compilar pa
 es la herramienta de gestión de ciclo de vida de un proyecto de rust, entiendo que es el equivalente de maven en java, puedo construir/build , iniciar / init, documentar/doc, etc
 
 ✔ Perfecta analogía.
+
 👉 Sí, es el “Maven” o “Gradle” de Rust:
 
 Gestiona dependencias (crates).
