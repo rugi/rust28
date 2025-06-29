@@ -49,10 +49,11 @@ Entonces, el toolchain es el paquete completo de herramientas que forman el ento
 
 👉 Rust tiene varias “versiones” de toolchains que puedes usar según tu necesidad:
 
-Toolchain	Uso principal	Ejemplo
-stable	Código de producción. Probado, con soporte, sin cambios experimentales.	rustc 1.87.0 que tú tienes ahora.
-beta	Versión previa a la próxima stable. Para testing anticipado.	Ej: rustc 1.88.0-beta
-nightly	Donde se prueban nuevas características experimentales. Permite usar features no estables.	Ej: rustc 1.89.0-nightly
+| Toolchain    |	Uso principal    |	Ejemplo    |
+| -------- | ------- | ------- |
+| stable    | 	Código de producción. Probado, con soporte, sin cambios experimentales.    | 	rustc 1.87.0 que tú tienes ahora.    | 
+| beta    | 	Versión previa a la próxima stable. Para testing anticipado.    | 	Ej: rustc 1.88.0-beta    
+| nightly    | 	Donde se prueban nuevas características experimentales. Permite usar features no estables.    | 	Ej: rustc 1.89.0-nightly | 
 
 Cuando rustup show dice:
     stable-x86_64-unknown-linux-gnu (active, default)
