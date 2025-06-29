@@ -1,11 +1,11 @@
 ## Semana 1. Validación.
-    [rugi@bigoze semana01]$ rustc --version
-                        rustc 1.87.0 (17067e9ac 2025-05-09)
+```console
+[rugi@bigoze semana01]$ rustc --version
+rustc 1.87.0 (17067e9ac 2025-05-09)
 
-    [rugi@bigoze semana01]$ cargo --version
-        cargo 1.87.0 (99624be96 2025-05-06)
+[rugi@bigoze semana01]$ cargo --version
+cargo 1.87.0 (99624be96 2025-05-06)
 
-```
 [rugi@bigoze semana01]$ rustup show
 Default host: x86_64-unknown-linux-gnu
 rustup home:  /home/rugi/.rustup
@@ -22,7 +22,7 @@ installed targets:
   x86_64-unknown-linux-gnu
 ```
 
-```bash
+```console
 [rugi@bigoze rust]$ echo "Carpeta actual"
 Carpeta actual
 
