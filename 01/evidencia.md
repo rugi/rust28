@@ -22,7 +22,7 @@ installed targets:
   x86_64-unknown-linux-gnu
 ```
 
-```
+```bash
 [rugi@bigoze rust]$ echo "Carpeta actual"
 Carpeta actual
 [rugi@bigoze rust]$ pwd
