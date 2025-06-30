@@ -1,7 +1,7 @@
 # Evidencia.
 ## 1. 🧰 Instalar Visual Studio Code
 
-
+![Visual Studio Code](/img/vsc.png)
 
 ## 2. 🧩 Instalar la extensión rust-analyzer
 
