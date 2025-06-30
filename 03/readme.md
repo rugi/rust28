@@ -1,5 +1,6 @@
-# Session 03.
-🎯 Objetivo general
+# Session 3. Actividades.
+
+🎯 Objetivos.
 Configurar correctamente VSCode como entorno de desarrollo Rust productivo, con:
 
 Soporte para análisis estático (rust-analyzer)
