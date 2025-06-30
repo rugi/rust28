@@ -17,7 +17,7 @@ Una vez instalada la extención se reinició VSC.
 ### Go to definition
 ### Hover info
 
-<video src="img/evidenciavsc.mp4" width="320" height="240" controls></video>
+Puedes ver la evidencia en: img/evidenciavsc.mp4"
 
 ### Errores en línea.
 
