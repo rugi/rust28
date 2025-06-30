@@ -17,7 +17,7 @@ Una vez instalada la extención se reinició VSC.
 ### Go to definition
 ### Hover info
 
-![Visual Studio Code](img/evidenciavsc.mp4)
+<video src="img/evidenciavsc.mp4" width="320" height="240" controls></video>
 
 ### Errores en línea.
 
