@@ -14,13 +14,14 @@ Una vez instalada la extención se reinició VSC.
 ## 4. 🧪 Validar funcionalidades básicas
 
 ### Autocompletado
-
 ### Go to definition
-
 ### Hover info
+
+![Visual Studio Code](img/evidenciavsc.mp4)
 
 ### Errores en línea.
 
 ## 5. ▶ Ejecutar desde el terminal del editor
-
+![Visual Studio Code](img/vsc_cargo_terminal.png)
 ## 6. 🎯 Ejecutar cargo fmt y cargo clippy desde VSCode
+![Visual Studio Code](img/vsc_cargo_terminal.png)
