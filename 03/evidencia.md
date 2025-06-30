@@ -9,7 +9,7 @@
 Una vez instalada la extención se reinició VSC.
 
 ## 3. 📂 Abrir el proyecto hello_rust desde VSCode
-
+![Visual Studio Code](img/rust_hello_world.png)
 
 ## 4. 🧪 Validar funcionalidades básicas
 
