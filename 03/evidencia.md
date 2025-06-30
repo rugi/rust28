@@ -2,6 +2,7 @@
 ## 1. 🧰 Instalar Visual Studio Code
 
 
+
 ## 2. 🧩 Instalar la extensión rust-analyzer
 
 
