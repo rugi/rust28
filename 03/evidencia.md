@@ -6,6 +6,8 @@
 ## 2. 🧩 Instalar la extensión rust-analyzer
 ![Visual Studio Code](img/vsc_extenciones.png)
 
+Una vez instalada la extención se reinició VSC.
+
 ## 3. 📂 Abrir el proyecto hello_rust desde VSCode
 
 
