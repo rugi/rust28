@@ -98,11 +98,13 @@ Inicial: I
 Usa let, mut, const, al menos 3 tipos primitivos y una operación matemática.
 
 📋 ## Checklist de validación – Semana 4
-[ ] Creé el proyecto semana04_variables	
-[ ] Declaré variables con let, con y sin tipo	
-[ ] Probé mut y vi el error al omitirlo	
-[ ] Usé una const y verifiqué que no se puede cambiar	
-[ ] Declaré variables de tipo: u8, f32, bool, char, &str	
-[ ] Hice al menos una operación matemática entre variables	
-[ ] Ejecuté cargo run y validé la salida	
-[ ] (Opcional) Completé el reto de la ficha personal	
+| Item |
+| --- |
+| [ ] Creé el proyecto semana04_variables	| 
+| [ ] Declaré variables con let, con y sin tipo	| 
+| [ ] Probé mut y vi el error al omitirlo	| 
+| [ ] Usé una const y verifiqué que no se puede cambiar	| 
+| [ ] Declaré variables de tipo: u8, f32, bool, char, &str	| 
+| [ ] Hice al menos una operación matemática entre variables	| 
+| [ ] Ejecuté cargo run y validé la salida	| 
+| [ ] (Opcional) Completé el reto de la ficha personal	| 
