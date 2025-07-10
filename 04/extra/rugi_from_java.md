@@ -1,4 +1,6 @@
 # Notas extras de @rugi, lenguaje origen: java.
+-------
+
 ## 📊 Tipos de datos primitivos en Rust
 |Tipo de dato|	Sintaxis	| Rango de valores	| Ejemplos|
 | --- | ---- | -----| ---- |
@@ -10,3 +12,73 @@
 |Cadena de texto | ```  (&str)	&str  ``` |	Cadena inmutable UTF-8 | ``` let saludo = "Hola"; let mensaje = "🦀 Rust!"; let vacio = "";  ```|
 |Tuplas | ``` (T1, T2, ...)	  ``` | Agrupación de tipos heterogéneos	| ``` let t = (42, true, "ok"); let coord = (3.5, 7.2); let solo = ('A',); ``` |
 |Arrays |	``` [T; N]   ```|	Colección fija de elementos del mismo tipo | ``` let a = [1, 2, 3]; let b: [u8; 4] = [0; 4]; let c = ["L", "M", "X"];  ```|
+
+-------
+
+## ¿Existe el cast forzado como en java?
+
+### ✔️ Sí, existe: se hace con as
+Rust no tiene casting implícito entre tipos numéricos. Si quieres convertir un tipo a otro, debes hacerlo explícitamente con el operador:
+
+```rust
+let x: u8 = 42;
+let y: f32 = x as f32;
+```
+
+🛠️ Sintaxis:
+
+```rust
+<valor> as <tipo_destino>
+```
+
+Ejemplo:
+```rust
+let edad: u8 = 30;
+let edad_doble = edad as u16;
+let promedio = edad as f32 / 2.0;
+```
+
+⚠️ Diferencias con Java
+
+| Aspecto |	Java	| Rust |
+| --- |----| ---- | 
+| Cast implícito	| Permitido (ej. de int a long) |	❌ No permitido (siempre requiere as)|
+| Cast explícito	 | (float) x	|x as f32|
+| Verificación de desbordamiento |	Solo en tiempo de ejecución con wrappers|	❌ En Rust no falla en tiempo de compilación (pero puedes usar TryFrom o checked_*)|
+| Seguridad	| Puede fallar silenciosamente (ej. overflow) |	Puedes optar por conversión segura (TryFrom, from, etc.) |
+
+💥 Ejemplo de truncamiento (ojo con esto)
+
+```rust
+let grande: u16 = 1000;
+let chico: u8 = grande as u8;  // pierde información
+println!("{}", chico);         // imprime: 232
+```
+
+Porque 1000 mod 256 = 232. ¡Rust lo permite, pero tú eres responsable!
+
+✅ Alternativas más seguras
+
+* u8::try_from(1000) devuelve Err(...)
+* i32::from(u8_var) es más claro y más seguro cuando el rango es seguro
+
+```rust
+use std::convert::TryFrom;
+
+let x: u16 = 1000;
+match u8::try_from(x) {
+    Ok(val) => println!("Valor convertido: {}", val),
+    Err(_) => println!("¡No se puede convertir sin pérdida!"),
+}
+```
+
+🦀 Conclusión
+
+| En Rust	| Equivalente Java| 
+|  --- | ---- |  
+| x as T	 |  (T) x | 
+| T::from(x)	|  new T(x) | 
+| T::try_from(x) | 	conversión con validación manual | 
+
+----
+
