@@ -1,5 +1,5 @@
 # Notas extras de @rugi, lenguaje origen: java.
-📊 Tipos de datos primitivos en Rust
+## 📊 Tipos de datos primitivos en Rust
 |Tipo de dato|	Sintaxis	| Rango de valores	| Ejemplos|
 | --- | ---- | -----| ---- |
 |Enteros con signo | ``` i8, i16, i32, i64, i128, isize ```|	-2ⁿ⁻¹ a 2ⁿ⁻¹ - 1	 | ``` let x: i8 = -120; let y: i32 = 100000;  let z: isize = -1; ``` |
