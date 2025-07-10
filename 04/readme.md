@@ -15,7 +15,7 @@ Dominar la sintaxis básica para declarar y usar:
 Con esto, empezarás a escribir código que usa datos, realiza operaciones simples y aplica buenas prácticas del lenguaje.
 
 ## ✅ Actividades detalladas
-1. 🧪 Crear un nuevo proyecto llamado semana04_variables
+1. 🧪 Crear un nuevo proyecto llamado session04_variables
 
 ```rust
 cargo new session04_variables
