@@ -97,7 +97,7 @@ Inicial: I
 
 Usa let, mut, const, al menos 3 tipos primitivos y una operación matemática.
 
-##  📋 Checklist de validación – Semana 4
+##  📋 Checklist de validación – Session 4
 | Item |
 | --- |
 | [ ] Creé el proyecto semana04_variables	| 
