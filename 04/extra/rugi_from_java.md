@@ -82,3 +82,62 @@ match u8::try_from(x) {
 
 ----
 
+Rust no lanza una excepción por desbordamiento en tiempo de ejecución en modo release, pero sí puede “reiniciar” el valor por diseño mediante una técnica llamada "wrapping", es decir, el valor se desborda de forma controlada, como tú bien mencionas.
+
+⚙️ ¿Qué pasa en Rust cuando un entero se desborda?
+🧪 En modo debug (cargo run)
+Rust detecta el overflow y detiene el programa con un panic!
+
+Ejemplo:
+
+```rust 
+let x: u8 = 255;
+let y = x + 1; // panic en modo debug
+```
+
+🚀 En modo release (cargo build --release)
+Rust NO lanza error. El valor simplemente se desborda (wrap-around)
+
+```rust
+let x: u8 = 255;
+let y = x + 1; // y = 0
+
+💡 Esto ocurre por razones de performance y compatibilidad con comportamiento de bajo nivel.
+
+
+🛠️ Formas explícitas de desbordar (si lo deseas):
+
+1. 🔁 wrapping_*()
+
+```rust
+let x: u8 = 255;
+let y = x.wrapping_add(1); // y = 0
+```
+
+2. 📏 checked_*() — para detectar overflow sin panic
+
+```rust
+let x: u8 = 255;
+match x.checked_add(1) {
+    Some(valor) => println!("Suma ok: {}", valor),
+    None => println!("¡Overflow detectado!"),
+}
+```
+
+3. ⛔ overflowing_*() — devuelve el resultado + un flag de overflow
+
+```rust
+let x: u8 = 255;
+let (resultado, overflow) = x.overflowing_add(1);
+println!("Resultado: {}, ¿overflow? {}", resultado, overflow);
+// Resultado: 0, ¿overflow? true
+```
+
+📦 Comparativa de métodos para aritmética segura
+|Método Rust |	Comportamiento |	Uso típico|
+| --- | --- |
+|wrapping_add()|	Desborda sin avisar (como C)|	Juegos, criptografía|
+|checked_add()|	Devuelve None si hay overflow	|Seguridad y control|
+|overflowing_add()|	Devuelve resultado y flag de overflow	|Bajo nivel|
+|saturating_add()	|Fija al máximo valor permitido	| Contadores|
+|+ (suma normal)	|Panic en modo debug, wrap en release	|General|
