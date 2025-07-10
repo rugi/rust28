@@ -8,5 +8,5 @@
 |Booleano |	bool |	true, false | 	let activo: bool = true; let apagado = false; let resultado = 5 > 2; |
 |Carácter Unicode |	char | Un solo caracter Unicode de 4 bytes |	let letra: char = 'A'; let emoji: char = '🚀'; let simbolo = 'π'; |
 |Cadena de texto | (&str)	&str |	Cadena inmutable UTF-8 |	let saludo = "Hola"; let mensaje = "🦀 Rust!"; let vacio = ""; |
-|Tuplas |	(T1, T2, ...)	 | Agrupación de tipos heterogéneos	let t = (42, true, "ok"); let coord = (3.5, 7.2); let solo = ('A',); |
+|Tuplas |	(T1, T2, ...)	 | Agrupación de tipos heterogéneos	| let t = (42, true, "ok"); let coord = (3.5, 7.2); let solo = ('A',); |
 |Arrays |	[T; N] |	Colección fija de elementos del mismo tipo |	let a = [1, 2, 3]; let b: [u8; 4] = [0; 4]; let c = ["L", "M", "X"]; |
