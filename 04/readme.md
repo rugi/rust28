@@ -82,7 +82,7 @@ let saludo: &str = "¡Hola!";
 ```rust
 let resultado = edad as f32 * altura;
 ```
-## 🎯  Mini reto final (opcional)
+##  🎯  Mini reto final (opcional)
 
 Haz un programa que imprima una ficha personal:
 
@@ -97,7 +97,7 @@ Inicial: I
 
 Usa let, mut, const, al menos 3 tipos primitivos y una operación matemática.
 
-## 📋 Checklist de validación – Semana 4
+##  📋 Checklist de validación – Semana 4
 | Item |
 | --- |
 | [ ] Creé el proyecto semana04_variables	| 
