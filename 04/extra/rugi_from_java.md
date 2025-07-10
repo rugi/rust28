@@ -134,8 +134,9 @@ println!("Resultado: {}, ¿overflow? {}", resultado, overflow);
 ```
 
 📦 Comparativa de métodos para aritmética segura
+
 |Método Rust |	Comportamiento |	Uso típico|
-| --- | --- |
+| --- | --- |--- |
 |wrapping_add()|	Desborda sin avisar (como C)|	Juegos, criptografía|
 |checked_add()|	Devuelve None si hay overflow	|Seguridad y control|
 |overflowing_add()|	Devuelve resultado y flag de overflow	|Bajo nivel|
