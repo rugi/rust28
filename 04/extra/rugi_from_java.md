@@ -81,7 +81,7 @@ match u8::try_from(x) {
 | T::try_from(x) | 	conversión con validación manual | 
 
 ----
-
+## ¿Cómo maneja Rust los desbordamientos de valores comparado con Java? 
 Rust no lanza una excepción por desbordamiento en tiempo de ejecución en modo release, pero sí puede “reiniciar” el valor por diseño mediante una técnica llamada "wrapping", es decir, el valor se desborda de forma controlada, como tú bien mencionas.
 
 ⚙️ ¿Qué pasa en Rust cuando un entero se desborda?
