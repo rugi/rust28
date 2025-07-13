@@ -46,4 +46,5 @@ println!("{}", if edad >= 18 { "Mayor" } else { "Menor" });
 ```
 ## 🦀 Conclusión
 No existe cond ? x : y en Rust porque el lenguaje ya te permite hacer eso de forma más clara con if como expresión.
+
 ---
