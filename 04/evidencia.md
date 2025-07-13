@@ -12,6 +12,8 @@ Abrimos VScode
 code .
 ```
 
+Codificamos:
+
 ```rust
 fn main() {
     // Declarar variables
