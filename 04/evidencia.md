@@ -1,6 +1,17 @@
 # Evidencia
 ## Código con lo solicitado
 
+### Creación del proyecto
+```console
+cargo new session04_variables
+cd session04_variables
+```
+
+Abrimos VScode
+```console
+code .
+```
+
 ```rust
 fn main() {
     // Declarar variables
