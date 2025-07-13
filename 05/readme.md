@@ -119,7 +119,7 @@ Crea un programa que:
 
 * Use match para calificar el número (ej: 1–3: bajo, 4–7: medio, 8–10: alto)
 
-## 📋 Checklist de validación – Semana 5
+## 📋 Checklist de validación – Session 5
 |Ítem |	Estado|
 | --- | ---|
 | [ ] Usé if y else con condición booleana	 |  | 
