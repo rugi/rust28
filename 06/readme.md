@@ -52,30 +52,28 @@ println!("{}, {}", ref1, ref2);
 
 ### 4. ❌ Errores comunes
 
-Usar una variable después de moverla
+* Usar una variable después de moverla.
+* Intentar tener referencias mutables e inmutables al mismo tiempo.
 
-Intentar tener referencias mutables e inmutables al mismo tiempo
+### ✅ Actividades sugeridas
 
-✅ Actividades sugeridas
-🧪 Crea un proyecto semana06_ownership
-Escribe un ejemplo de movimiento de String y observa el error si intentas usar la variable original.
+🧪 Crea un proyecto session06_ownership
+1. Escribe un ejemplo de movimiento de String y observa el error si intentas usar la variable original.
+2. Escribe un ejemplo con i32 y demuestra que no hay problema con las copias.
+3. Crea una función que reciba un String como argumento → observa cómo se transfiere la propiedad.
+4. Crea otra función que reciba &String → muestra cómo se evita el move.
+5. Prueba tener múltiples referencias inmutables al mismo valor y verifica que es válido.
+6. Intenta tener una mutable e inmutable al mismo tiempo → observa el error del compilador.
 
-Escribe un ejemplo con i32 y demuestra que no hay problema con las copias.
+### 📋 Checklist de validación – Session 06
 
-Crea una función que reciba un String como argumento → observa cómo se transfiere la propiedad.
-
-Crea otra función que reciba &String → muestra cómo se evita el move.
-
-Prueba tener múltiples referencias inmutables al mismo valor y verifica que es válido.
-
-Intenta tener una mutable e inmutable al mismo tiempo → observa el error del compilador.
-
-📋 Checklist de validación – Semana 6
-Ítem	Estado
-[ ] Probé mover un String y observé el error al usar la variable original	
-[ ] Usé un tipo Copy (i32, bool) y confirmé que no genera error al copiar	
-[ ] Hice una función que toma propiedad (String)	
-[ ] Hice una función que toma préstamo (&String)	
-[ ] Usé múltiples referencias inmutables sin error	
-[ ] Intenté mezclar mutables e inmutables y vi el error del compilador	
-[ ] Entendí que Rust mueve o presta, nunca copia implícitamente en tipos complejos
+|---|---|
+|Ítem	| Estado|
+|---|---|
+| [ ] | Probé mover un String y observé el error al usar la variable original	|
+| [ ] | Usé un tipo Copy (i32, bool) y confirmé que no genera error al copiar	|
+| [ ] | Hice una función que toma propiedad (String)	|
+| [ ] | Hice una función que toma préstamo (&String)	|
+| [ ] | Usé múltiples referencias inmutables sin error	|
+| [ ] | Intenté mezclar mutables e inmutables y vi el error del compilador	|
+| [ ] | Entendí que Rust mueve o presta, nunca copia implícitamente en tipos complejos|
