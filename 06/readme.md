@@ -14,9 +14,9 @@ Esto te permitirá *entender por qué Rust no necesita un garbage collector* y c
 
 ### 1. 🔐 Ownership (propiedad única)
 
-* Cada valor en Rust tiene un "owner"
-* Solo un owner a la vez
-* El valor se libera cuando su owner sale de scope
+* Cada valor en Rust tiene un "owner".
+* Solo un owner a la vez.
+* El valor se libera cuando su owner sale de scope.
 
 Ejemplo:
 
@@ -27,30 +27,31 @@ let s2 = s1; // s1 ya no es válido
 
 ### 2. 🔄 Move vs Copy
 
-* Tipos como String, Vec, Box se mueven
+* Tipos como String, Vec, Box se mueven.
 * Tipos como i32, bool, char se copian automáticamente.
 
-rust
-Copy
-Edit
+```rust
 let x = 10;
 let y = x; // x aún es válido porque i32 implementa Copy
 
 let a = String::from("Rust");
 let b = a; // a ya no es válido
-3. 📤 Borrowing inmutable (&T)
-Puedes "prestar" un valor sin moverlo
+```
 
-Puedes tener múltiples préstamos inmutables al mismo tiempo
+### 3. 📤 Borrowing inmutable (&T) 
 
-rust
-Copy
-Edit
+* Puedes "prestar" un valor sin moverlo.
+* Puedes tener múltiples préstamos inmutables al mismo tiempo.
+
+```rust
 let s = String::from("dato");
 let ref1 = &s;
 let ref2 = &s;
 println!("{}, {}", ref1, ref2);
-4. ❌ Errores comunes
+```
+
+### 4. ❌ Errores comunes
+
 Usar una variable después de moverla
 
 Intentar tener referencias mutables e inmutables al mismo tiempo
