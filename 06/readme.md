@@ -67,7 +67,7 @@ println!("{}, {}", ref1, ref2);
 
 ### 📋 Checklist de validación – Session 06
 
-|---|---|
+
 |Ítem	| Estado|
 |---|---|
 | [ ] | Probé mover un String y observé el error al usar la variable original	|
