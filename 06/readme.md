@@ -10,26 +10,25 @@ Comprender y aplicar los conceptos fundamentales de:
 
 Esto te permitirá *entender por qué Rust no necesita un garbage collector* y cómo garantiza seguridad de memoria en *tiempo de compilación*.
 
-## 📌 Subtemas que cubriremos esta semana
+## 📌 Subtemas que cubriremos esta session.
 
 ### 1. 🔐 Ownership (propiedad única)
-Cada valor en Rust tiene un "owner"
 
-Solo un owner a la vez
-
-El valor se libera cuando su owner sale de scope
+* Cada valor en Rust tiene un "owner"
+* Solo un owner a la vez
+* El valor se libera cuando su owner sale de scope
 
 Ejemplo:
 
-rust
-Copy
-Edit
+```rust
 let s1 = String::from("Hola");
 let s2 = s1; // s1 ya no es válido
-2. 🔄 Move vs Copy
-Tipos como String, Vec, Box se mueven
+```
 
-Tipos como i32, bool, char se copian automáticamente
+### 2. 🔄 Move vs Copy
+
+* Tipos como String, Vec, Box se mueven
+* Tipos como i32, bool, char se copian automáticamente.
 
 rust
 Copy
